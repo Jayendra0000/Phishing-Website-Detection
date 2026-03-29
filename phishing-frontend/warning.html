@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Security Alert - Phishing Detected</title>
+  <link rel="stylesheet" href="warning.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <div class="warning-container">
+    <div class="header">
+      <div class="security-icon">
+        <i class="fas fa-shield-alt"></i>
+        <span class="pulse"></span>
+      </div>
+      <h1>Security Alert</h1>
+      <p class="subtitle">Phishing Website Detected</p>
+    </div>
+
+    <div class="alert-card">
+      <div class="alert-header">
+        <i class="fas fa-exclamation-triangle"></i>
+        <h2>Warning: Potential Phishing Threat</h2>
+      </div>
+      
+      <div class="alert-content">
+        <p class="alert-message">
+          Our AI-powered security system has identified this website as a potential phishing threat.
+          Phishing websites try to steal your personal information, passwords, or financial details.
+        </p>
+        
+        <div class="threat-details">
+          <div class="detail-box">
+            <div class="detail-label">
+              <i class="fas fa-robot"></i>
+              <span>AI Analysis</span>
+            </div>
+            <p id="ai-explanation" class="detail-value">Analyzing threat patterns...</p>
+          </div>
+          
+          <div class="detail-box">
+            <div class="detail-label">
+              <i class="fas fa-chart-line"></i>
+              <span>Confidence Level</span>
+            </div>
+            <div class="confidence-meter">
+              <div class="meter-bar">
+                <div id="confidence-fill" class="meter-fill"></div>
+              </div>
+              <span id="confidence-text" class="confidence-text">Medium</span>
+            </div>
+          </div>
+          
+          <div class="detail-box">
+            <div class="detail-label">
+              <i class="fas fa-clock"></i>
+              <span>Detection Time</span>
+            </div>
+            <p id="detection-time" class="detail-value">Just now</p>
+          </div>
+        </div>
+        
+        <div class="recommendations">
+          <h3><i class="fas fa-lightbulb"></i> Recommended Actions</h3>
+          <ul>
+            <li><i class="fas fa-check-circle"></i> Do not enter any personal information</li>
+            <li><i class="fas fa-check-circle"></i> Avoid clicking on suspicious links</li>
+            <li><i class="fas fa-check-circle"></i> Verify the website URL carefully</li>
+            <li><i class="fas fa-check-circle"></i> Consider reporting this site</li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="action-buttons">
+        <button id="go-back-btn" class="btn btn-primary">
+          <i class="fas fa-arrow-left"></i> Go Back to Safety
+        </button>
+        <button id="proceed-btn" class="btn btn-secondary">
+          <i class="fas fa-external-link-alt"></i> Proceed Anyway (Not Recommended)
+        </button>
+      </div>
+      
+      <div class="footer">
+        <p>
+          <i class="fas fa-info-circle"></i>
+          This warning is powered by AI analysis. Phishing detection accuracy: <strong>98.7%</strong>
+        </p>
+      </div>
+    </div>
+    
+    <div class="security-tip">
+      <i class="fas fa-lock"></i>
+      <p>Always check for "https://" and the lock icon in your address bar before entering sensitive information.</p>
+    </div>
+  </div>
+  
+  <script src="warning.js"></script>
+</body>
+</html>

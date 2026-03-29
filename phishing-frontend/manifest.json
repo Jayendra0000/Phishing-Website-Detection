@@ -1,0 +1,31 @@
+{
+  "manifest_version": 3,
+  "name": "Phishing Website Detector",
+  "version": "2.0",
+  "description": "Automatically blocks phishing websites using ML and AI explanation",
+
+  "permissions": ["tabs", "activeTab"],
+
+  "host_permissions": [
+    "http://127.0.0.1:5000/*"
+  ],
+
+  "background": {
+    "service_worker": "background.js"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"],
+      "run_at": "document_start"
+    }
+  ],
+
+  "web_accessible_resources": [
+    {
+      "resources": ["warning.html", "warning.css", "warning.js"],
+      "matches": ["<all_urls>"]
+    }
+  ]
+}
